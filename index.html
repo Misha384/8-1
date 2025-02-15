@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body id="body">
+    <div class="container">
+        <nav>
+            <img src="./img/Logo (2).png" alt="#">
+            <div class="ul">
+                <li> <a href="#">Shop</a></li>
+                <li> <a href="#">Brands</a></li>
+                <li> <a href="#">Contact us</a></li>
+                <button class="btn">Sign up</button>
+            </div>
+        </nav>
+        <main>
+            <div class="list-left">
+                <h1>Exquisite Watches</h1>
+                <h3>Choose Luxury,<span>Choose Us</span></h3>
+                <p>Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and
+                    Precision Craftsmanship
+                    - watch</p>
+                <h1>$430.00</h1>
+                <img src="./img/Frame 6.png" alt="#">
+            </div>
+            <div class="list-right">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/Watches.png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Watches (1).png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Watches (2).png" alt="#">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/Watches (3).png" alt="#">
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            </div>
+        </main>
+
+    </div>
+
+    
+
+    <script src="./js/script.js"></script>
+
+
+    <script>
+       const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            // direction: 'vertical',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
